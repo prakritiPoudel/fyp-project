@@ -46,7 +46,7 @@ class _SplashPageState extends State<SplashPage> {
           Center(
             child: SizedBox(
               width: MediaQuery.of(context).size.width * 0.6,
-              child: Image.asset("assets/booking.gif"),
+              child: Image.asset("assets/Sporty way-logo.png"),
             ),
           ),
           const Spacer(),

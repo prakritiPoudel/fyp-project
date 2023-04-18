@@ -96,7 +96,7 @@ class VenueDetailCard extends StatelessWidget {
                           height: 20,
                           width: 300,
                           child: Marquee(
-                              text: "ChangingRoom, Washroom, equiments",
+                              text: "ChangingRoom, Washroom, Equipments",
                               style: const TextStyle(fontSize: 13),
                               scrollAxis: Axis.horizontal,
                               blankSpace: 150.0,

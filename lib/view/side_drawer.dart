@@ -13,15 +13,16 @@ class SideDrawer extends StatelessWidget {
     return Drawer(
       child: Column(
         children: [
-          Image.network(
-            "https://cdn.gurubaa.com/wp-content/uploads/2022/02/26162448/play.jpg",
+          Image.asset(
+            "assets/Sporty way-logo.png",
+            height: 145.0,
           ),
           Padding(
             padding: const EdgeInsets.only(left: 8.0),
             child: Column(
               crossAxisAlignment: CrossAxisAlignment.start,
               children: [
-                Center(
+                const Center(
                   child: Text(
                     "Contact Us",
                     style: TextStyle(
@@ -31,30 +32,30 @@ class SideDrawer extends StatelessWidget {
                   ),
                 ),
                 Padding(
-                  padding: EdgeInsets.only(left: 5.0),
+                  padding: const EdgeInsets.only(left: 5.0),
                   child: Text(
                     "Get in touch with us if you have any questions, need support or just want to learn more about Sporty Way",
                     textAlign: TextAlign.justify,
                     style: GoogleFonts.ptSans(
                       fontSize: 13,
-                      textStyle: TextStyle(
+                      textStyle: const TextStyle(
                         color: Color.fromARGB(255, 10, 11, 102),
                       ),
                     ),
                   ),
                 ),
-                SizedBox(
+                const SizedBox(
                   height: 40,
                 ),
-                Text(
+                const Text(
                   " How Can I get in Touch ?",
                   style: TextStyle(
                       color: Color.fromARGB(255, 212, 35, 22), fontSize: 16),
                 ),
-                SizedBox(
+                const SizedBox(
                   height: 20,
                 ),
-                ListTile(
+                const ListTile(
                   tileColor: Color.fromARGB(255, 239, 234, 234),
                   leading: Icon(Icons.email_outlined),
                   title: Text(
@@ -68,8 +69,8 @@ class SideDrawer extends StatelessWidget {
                     style: TextStyle(fontSize: 12),
                   ),
                 ),
-                SizedBox(height: 20),
-                ListTile(
+                const SizedBox(height: 20),
+                const ListTile(
                   tileColor: Color.fromARGB(255, 239, 234, 234),
                   leading: Icon(Icons.call),
                   title: Text(

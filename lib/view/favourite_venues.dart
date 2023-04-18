@@ -34,8 +34,8 @@ class FavouriteVenues extends StatelessWidget {
                           children: [
                             VenueDetailCard(venue: model),
                             Positioned(
-                              top: 10,
-                              right: 10,
+                              top: 12,
+                              right: 50,
                               child: IconButton(
                                 onPressed: () async {
                                   await RemoteServices().addToFav(model.id);

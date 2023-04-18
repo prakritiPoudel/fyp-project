@@ -6,12 +6,13 @@ import 'package:dio/dio.dart';
 import 'session.dart';
 
 class RemoteServices {
-  final String baseip = "http://172.16.18.85/sportyways/";
-  final String api = "http://172.16.18.85/sportyways/api/";
-  final String media = "http://172.16.18.85/sportyways/media/";
+  final String baseip = "http://172.16.17.3/sportyways/";
+  final String api = "http://172.16.17.3/sportyways/api/";
+  final String media = "http://172.16.17.3/sportyways/media/";
   Dio dio = Dio();
   Future<Dio> getDio() async {
     String userid = (await Session().readId()).toString();
+
     dio.options
       ..validateStatus = (int? status) {
         return true;

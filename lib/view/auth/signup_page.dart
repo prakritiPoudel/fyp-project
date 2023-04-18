@@ -24,7 +24,7 @@ class SignupPage extends StatelessWidget {
         backgroundColor: Colors.transparent,
         iconTheme: const IconThemeData(color: Colors.black),
         title: Text(
-          "Signup",
+          "SignUp",
           style: TextStyle(
             fontWeight: FontWeight.w700,
             fontSize: 30,
