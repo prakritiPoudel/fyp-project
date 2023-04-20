@@ -65,7 +65,7 @@ class SideDrawer extends StatelessWidget {
                     ),
                   ),
                   subtitle: Text(
-                    "For sales:@gmail.com\nFor support:@gmail.com",
+                    "For sales:venuebooking@gmail.com\nFor support:sportyway@gmail.com",
                     style: TextStyle(fontSize: 12),
                   ),
                 ),

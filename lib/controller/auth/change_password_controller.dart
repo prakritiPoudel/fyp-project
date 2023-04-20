@@ -21,13 +21,7 @@ class ChangePasswordController extends GetxController {
       currentPassword,
       newPassword,
     );
-    if (response.data.toString().contains('Invalid Credentials.')) {
-      Fluttertoast.showToast(msg: "The Email or password did not match");
-    } else {
-      log(response.data.toString());
-
-      Fluttertoast.showToast(msg: "Password has been changed");
-    }
+    Fluttertoast.showToast(msg: response.data['message']);
 
     isLoading = false;
     update();
