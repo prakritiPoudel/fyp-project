@@ -8,6 +8,7 @@ import '../../utils/remote_services.dart';
 import 'profile_controller.dart';
 
 class UpdateProfileController extends GetxController {
+  //dependencies injection use gareyko.
   TextEditingController fullNameController = TextEditingController();
   TextEditingController emailController = TextEditingController();
   TextEditingController phoneNumberController = TextEditingController();

@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:sporty_waysfluttedo/utils/constants.dart';
+import 'package:sporty_waysfluttedo/view/transaction_view.dart';
 import 'view/auth/change_password.dart';
 import 'view/auth/login_page.dart';
 import 'view/auth/signup_page.dart';
@@ -89,6 +90,7 @@ class MyApp extends StatelessWidget {
               RequestReset.path: (_) => RequestReset(),
               OtpPage.path: (_) => OtpPage(),
               ResetPassword.path: (_) => ResetPassword(),
+              TransactionView.path: (_) => const TransactionView(),
             },
           );
         });

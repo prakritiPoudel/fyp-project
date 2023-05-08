@@ -4,6 +4,7 @@ import 'package:sporty_waysfluttedo/view/auth/update_profile.dart';
 import '../../controller/auth/profile_controller.dart';
 import '../../utils/session.dart';
 import '../favourite_venues.dart';
+import '../transaction_view.dart';
 import 'change_password.dart';
 import 'login_page.dart';
 
@@ -100,9 +101,20 @@ class ProfilePage extends StatelessWidget {
                 color: Colors.redAccent,
               ),
               title: const Text("Saved Venues"),
-              subtitle: const Text("venues you added to favoirites"),
+              subtitle: const Text("venues you added to favourites"),
               onTap: () {
                 Navigator.pushNamed(context, FavouriteVenues.path);
+              },
+            ),
+          ),
+          Card(
+            elevation: 5,
+            child: ListTile(
+              leading: const Icon(Icons.payment),
+              title: const Text("Transactions"),
+              subtitle: const Text("View all your transactions"),
+              onTap: () {
+                Navigator.pushNamed(context, TransactionView.path);
               },
             ),
           ),

@@ -10,6 +10,10 @@ class RemoteServices {
   final String api = "http://192.168.1.67/sportyways/api/";
   final String media = "http://192.168.1.67/sportyways/media/";
   Dio dio = Dio();
+  var dioOptions = Options(
+    receiveDataWhenStatusError: true,
+    validateStatus: (value) => true,
+  );
   Future<Dio> getDio() async {
     String userid = (await Session().readId()).toString();
 
@@ -30,7 +34,7 @@ class RemoteServices {
       "email": email,
       "password": password,
     });
-    var response = await Dio().post(url, data: data);
+    var response = await Dio().post(url, data: data, options: dioOptions);
     return response;
   }
 
@@ -265,6 +269,15 @@ class RemoteServices {
       "password": password,
     });
     var response = await Dio().post(url, data: data);
+    return response;
+  }
+
+  Future<Response> transaction(DateTime pickedDate) async {
+    String url = "${api}transactions/";
+    Dio dio = await getDio();
+    var response = await dio.get(
+      "$url?year=${pickedDate.year}&month=${pickedDate.month}",
+    );
     return response;
   }
 }

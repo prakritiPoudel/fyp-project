@@ -25,6 +25,7 @@ class CheckoutController extends GetxController {
     };
     var response = await RemoteServices().checkout(data);
     if (response.data['status']) {
+      //Plugin to show a toast message on screen
       Fluttertoast.showToast(msg: response.data['message']);
     }
     loading = false;

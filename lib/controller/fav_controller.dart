@@ -8,6 +8,7 @@ class FAVController extends GetxController {
   bool loading = false;
 
   @override
+  //override onInit method of superclassx
   void onInit() {
     super.onInit();
     loadFavouriteVenues();

@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 
+//Booking slots description page
 class Legend extends StatelessWidget {
   const Legend({
     super.key,
